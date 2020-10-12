@@ -2,67 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <meta description= "Personal website of Valeria Rincon">
+    <meta description= "Personal website of Valeria Rincon">
     <title>Valeria Rincon</title>
   </head>
+  <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    .navbar a {
-    float: left;
-    color: #a2a2c3;
+  <style media="screen">
+  .content {
+  max-width: 1000px;
+  margin: auto;
+  }
+
+  td, th {
     text-align: center;
-    padding: 10px 20px;
-    font-size: 20px;
-    }
-
-    .center {
-    display: block;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: auto;
-    width: 50%;
-    }
-
-    .content {
-    max-width: 1000px;
-    margin: auto;
-    }
-
-    body {
-      font-family:helvetica;
-      color: white;
-      background-color:  #1a1a1a;
-      padding-bottom: 100px;
-    }
-
-    p{
-      text-align:justify
-    }
-
-    table {
-      width: 100%;
-    }
-
-    td, th {
-      border: 1px solid #9999ff;
-      text-align: center;
-    }
-
-    a {
-    color: #a2a2c3;
-    background-color: transparent;
-    text-decoration: none;
-    }
+  }
   </style>
 
   <body>
   <div class="content">
-    <h1>Valeria Rincon</h1>
+    <h1 id="pageTitle"> Valeria Rincon</h1>
 
     <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="Portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact Me</a>
+      <a class="navbar-item active" href="index.html">Home</a>
+      <a class="navbar-item" href="Portfolio.html">Portfolio</a>
+      <a class="navbar-item" href="contact.html">Contact Me</a>
     </div>
 
     <img src="images/ValeriaR.png"; width="350px"; class="center">
@@ -70,6 +34,7 @@
     <br>
     <br>
 
+    <div class="aboutme">
     <h2>About me</h2>
     <p >Hey! I'm Valeria, an artist and aspiring game programmer from Bogotá, Colombia. I studied art at Los Andes University in Colombia and specialize in electronic media. I personally enjoy video and sound editing, but I also have experience in performance, animation and installation art. I am currently studying Game Programming at St. Lawrence College in Cornwall, Ontario. You can click here to check out the <a href="#slccourses">courses I'm taking this semester.</a></p>
 
@@ -87,7 +52,9 @@
     <blockquote cite="https://www.stlawrencecollege.ca/programs-and-courses/full-time/programs/a_m/game-programming/cornwall/">
     “We are delighted with the unique training they receive at the College. It provides the training required for critical technical needs in production systems and software development support that can be tricky to staff. “
     </blockquote>
+    </div>
 
+    <div class="interests">
     <br>
     <hr style="height:3px;border-width:0;color:purple;background-color:#9999ff">
     <br>
@@ -111,7 +78,9 @@
     <br>
     <hr style="height:3px;border-width:0;color:#9999ff;background-color:#9999ff">
     <br>
+    </div>
 
+    <div class="slctable">
     <h2><a id="slccourses"></a>Courses Taken at St. Lawrence College. </h2>
     <br>
     <table style="border: 3px solid #9999ff">
@@ -156,6 +125,7 @@
         <td>Fall 2020</td>
       </tr>
     </table>
+    </div>
 
   </div>
   </body>
